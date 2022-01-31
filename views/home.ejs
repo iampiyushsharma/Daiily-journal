@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+<h1>Home</h1>
+<p><%= stringContent %></p>
+<%  array.forEach(function(array){ %>
+    <h1><%=array.tital%></h1>
+    <p><%=array.textInIt.substring(0,100)+ "..."%><a href="/array/<%=array.tital%>">Read me</a></p>
+
+<% })%>
+<form action="compose">
+    <input type="submit" value="Compose" />
+</form>
+
+<%- include("partials/footer") -%>
